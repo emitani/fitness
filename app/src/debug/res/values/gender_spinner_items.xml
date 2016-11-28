@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="genderSpinnerItems">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+</resources>

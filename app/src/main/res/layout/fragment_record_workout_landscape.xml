@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eiko.alphafitness.RecordWorkoutLandscapeFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/alphaTitle"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/alphaPrussianBlue"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="7"
+        android:layout_gravity="center_horizontal"
+        android:alignmentMode="alignMargins"
+        android:background="@color/alphaGray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/alphaWorkoutDetails"
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textSize="33dp"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/alphaAVG"
+            android:id="@+id/textView4"
+            android:textStyle="bold"
+            android:padding="0dp"
+            android:layout_gravity="top|center_vertical"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="2"
+            android:background="@color/alphaGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0:00"
+            android:id="@+id/aveSpeed"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="33dp"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="2"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/alphaMpK"
+            android:id="@+id/textView5"
+            android:textStyle="bold"
+            android:padding="0dp"
+            android:layout_gravity="left|center_vertical|bottom"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="2"
+            android:gravity="left"
+            android:background="@color/alphaGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Max"
+            android:id="@+id/textView6"
+            android:textStyle="bold"
+            android:padding="0dp"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0:00"
+            android:id="@+id/maxSpeed"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/alphaMpK"
+            android:id="@+id/textView8"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:textStyle="bold"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/min"
+            android:id="@+id/textView9"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textAlignment="inherit" />
+
+        <TextView
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0:00"
+            android:id="@+id/minSpeed"
+            android:layout_row="1"
+            android:layout_column="5"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/alphaMpK"
+            android:id="@+id/textView11"
+            android:layout_row="1"
+            android:layout_column="6"
+            android:textStyle="bold"
+            android:textAlignment="textStart" />
+
+    </GridLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
