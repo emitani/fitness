@@ -11,8 +11,7 @@ Once workout is started, it keeps track of your locations and draw the path you 
 When you click on the profile image, you can enter your personal information. 
 This screen also shows the current workout statistics (lifetime and this week's average). 
 
-![screenshot_20170705-094556](https://user-images.githubusercontent.com/15490935/27875758-32f2daba-6169-11e7-80e0-aa7defff4a3c.png)
-
+![screenshot_20170706-090412](https://user-images.githubusercontent.com/15490935/27920767-86864e2a-622a-11e7-8cf8-75b83db1492e.png)
 
 
 When the phone is held horizontally during the workout, it shows the live graph of calories burned every 5 minutes, till Stop button is pressed.
