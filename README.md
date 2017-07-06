@@ -1,7 +1,7 @@
 # Alpha Fitness
 
 My second Android App, written for a Mobile App Development class at SJSU (Fall, 2016). 
-This uses MPAndroidChart to draw a chart, and Google App APIs to display current location and path in a map. 
+This uses MPAndroidChart to draw a chart, and Google APIs to display current location and path in a map. 
 
 When the phone is held vertically, you can start & stop workout by clicking on the button. 
 Once workout is started, it keeps track of your locations and draw the path you have walked/run.
